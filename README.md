@@ -37,14 +37,20 @@ After changing layout/height code, re-apply it without re-embedding: `npm run re
 
 ## Enable PuppyGraph (real graph engine)
 ```bash
-npx tsx scripts/export-sql.ts   # data/graph.json -> data/seed.sql
-docker compose up -d            # Postgres + PuppyGraph
-# open http://localhost:8081, log in puppygraph / puppygraph123,
-# upload puppygraph/schema.json
-echo "PUPPYGRAPH_URL=http://localhost:8081" >> .env
+npm run export-sql              # data/graph.json -> data/seed.sql (loaded by Postgres on first boot)
+docker compose up -d            # Postgres + PuppyGraph (Bolt :7687, UI :8081)
+
+# register the schema (maps the SQL tables to a Repo/SIMILAR_TO graph):
+curl -XPOST -H "content-type: application/json" --data @puppygraph/schema.json \
+  --user "puppygraph:puppygraph123" http://localhost:8081/schema
+
+cp .env.example .env            # already sets PUPPYGRAPH_BOLT=bolt://localhost:7687
+npm run dev
 ```
-With `PUPPYGRAPH_URL` set, `/api/graph` runs openCypher against PuppyGraph; otherwise it
-falls back to `lib/graph-queries.ts`. The toolbar shows which served each query (`via puppygraph` / `via snapshot`).
+With `PUPPYGRAPH_BOLT` set, `/api/graph` runs **openCypher over Bolt** against PuppyGraph
+(`lib/puppy.ts`); otherwise it falls back to `lib/graph-queries.ts` on the snapshot. The toolbar
+shows which served each query (`via puppygraph` / `via snapshot`). Neighbors, shortest-path,
+hubs, district, and the rendered edge set are all real Cypher traversals.
 
 ## Controls
 - **Drag** orbit · **scroll** zoom · **click** building → side panel · click empty space → deselect
@@ -57,7 +63,7 @@ falls back to `lib/graph-queries.ts`. The toolbar shows which served each query 
   is committed and bundled (imported statically — no runtime filesystem reads), so the app
   works with **no env vars**.
 - **PuppyGraph + Postgres → a container host** (Railway / Fly / VM) — *not* Vercel (stateful).
-  Set `PUPPYGRAPH_URL`, `PUPPYGRAPH_USER`, `PUPPYGRAPH_PASSWORD` as Vercel env vars to enable
+  Set `PUPPYGRAPH_BOLT`, `PUPPYGRAPH_USER`, `PUPPYGRAPH_PASSWORD` as Vercel env vars to enable
   live graph queries; without them the app falls back to in-process algorithms on the snapshot.
 
 ## Security notes

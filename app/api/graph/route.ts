@@ -24,9 +24,9 @@ async function viaPuppy(op: GraphOp, b: any): Promise<QueryResult | null> {
     switch (op) {
       case "neighbors": {
         const rows = await cypher(
-          `MATCH (r:Repo {id:$id})-[e:SIMILAR_TO]-(n:Repo)
-           RETURN n.id AS nid, e.weight AS w ORDER BY w DESC LIMIT $k`,
-          { id: b.id, k: b.k ?? 6 },
+          `MATCH (r:Repo {rid:$pId})-[e:SIMILAR_TO]-(n:Repo)
+           RETURN n.rid AS nid, e.weight AS w ORDER BY w DESC LIMIT $pK`,
+          { pId: b.id, pK: b.k ?? 6 },
         );
         return {
           nodeIds: [b.id, ...rows.map((r) => r.nid)],
@@ -36,16 +36,16 @@ async function viaPuppy(op: GraphOp, b: any): Promise<QueryResult | null> {
       case "hubs": {
         const rows = await cypher(
           `MATCH (r:Repo)-[e:SIMILAR_TO]-(:Repo)
-           RETURN r.id AS id, count(e) AS deg ORDER BY deg DESC LIMIT $top`,
-          { top: b.top ?? 5 },
+           RETURN r.rid AS id, count(e) AS deg ORDER BY deg DESC LIMIT $pTop`,
+          { pTop: b.top ?? 5 },
         );
         return { nodeIds: rows.map((r) => r.id), edgeKeys: [] };
       }
       case "path": {
         const rows = await cypher(
-          `MATCH p = shortestPath((a:Repo {id:$from})-[:SIMILAR_TO*..8]-(b:Repo {id:$to}))
-           RETURN [n IN nodes(p) | n.id] AS ids`,
-          { from: b.from, to: b.to },
+          `MATCH p = shortestPath((a:Repo {rid:$pFrom})-[:SIMILAR_TO*..8]-(b:Repo {rid:$pTo}))
+           RETURN [n IN nodes(p) | n.rid] AS ids`,
+          { pFrom: b.from, pTo: b.to },
         );
         const ids: string[] = rows[0]?.ids ?? [];
         const edgeKeys: string[] = [];
@@ -54,8 +54,8 @@ async function viaPuppy(op: GraphOp, b: any): Promise<QueryResult | null> {
       }
       case "district": {
         const rows = await cypher(
-          `MATCH (r:Repo {clusterId:$c}) RETURN r.id AS id`,
-          { c: b.clusterId },
+          `MATCH (r:Repo {clusterId:$pC}) RETURN r.rid AS id`,
+          { pC: b.clusterId },
         );
         return { nodeIds: rows.map((r) => r.id), edgeKeys: [] };
       }
@@ -80,7 +80,7 @@ export async function POST(req: NextRequest) {
       try {
         const rows = await cypher(
           `MATCH (a:Repo)-[e:SIMILAR_TO]->(b:Repo)
-           RETURN a.id AS source, b.id AS target, e.weight AS weight`,
+           RETURN a.rid AS source, b.rid AS target, e.weight AS weight`,
         );
         const edges = rows.map((r) => ({
           source: r.source,

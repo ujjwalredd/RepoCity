@@ -1,38 +1,65 @@
-// Server-side PuppyGraph client. Talks openCypher over PuppyGraph's HTTP
-// query endpoint. If PUPPYGRAPH_URL is unset or the call fails, callers fall
-// back to lib/graph-queries.ts running on the snapshot. This keeps the app
-// fully functional offline while remaining production-ready when the engine
-// is provisioned.
+// Server-side PuppyGraph client. Queries openCypher over the Bolt protocol
+// (PuppyGraph exposes Bolt on :7687), which maps the Postgres `repos` /
+// `similarity_edges` tables to a property graph (see puppygraph/schema.json).
+//
+// If PUPPYGRAPH_BOLT is unset or a query fails, callers fall back to the
+// in-process algorithms on the snapshot (lib/graph-queries.ts) — so the app is
+// fully functional with no backend, and "production-real" when the engine runs.
 
-const URL_BASE = process.env.PUPPYGRAPH_URL;
+import neo4j, { Driver, Integer } from "neo4j-driver";
+
+const BOLT = process.env.PUPPYGRAPH_BOLT; // e.g. bolt://localhost:7687
 const USER = process.env.PUPPYGRAPH_USER ?? "puppygraph";
 const PASS = process.env.PUPPYGRAPH_PASSWORD ?? "puppygraph123";
 
+let driver: Driver | null = null;
+
 export function puppyEnabled() {
-  return Boolean(URL_BASE);
+  return Boolean(BOLT);
+}
+
+function getDriver(): Driver {
+  if (!BOLT) throw new Error("PUPPYGRAPH_BOLT not configured");
+  if (!driver) {
+    driver = neo4j.driver(BOLT, neo4j.auth.basic(USER, PASS), {
+      // PuppyGraph is internal infra; cap connection acquisition so the API
+      // route can fall back quickly if it's down
+      connectionAcquisitionTimeout: 4000,
+      maxConnectionPoolSize: 10,
+    });
+  }
+  return driver;
+}
+
+// neo4j returns its own Integer type; flatten to plain JS values for JSON.
+function toPlain(v: unknown): unknown {
+  if (neo4j.isInt(v as never)) return (v as Integer).toNumber();
+  if (Array.isArray(v)) return v.map(toPlain);
+  if (v && typeof v === "object") {
+    const out: Record<string, unknown> = {};
+    for (const [k, val] of Object.entries(v as Record<string, unknown>)) out[k] = toPlain(val);
+    return out;
+  }
+  return v;
 }
 
 /**
- * Run an openCypher query against PuppyGraph. Returns the raw rows.
- * Schema mapping lives in puppygraph/schema.json (Repo vertices, SIMILAR_TO edges).
+ * Run an openCypher query against PuppyGraph and return plain row objects.
+ * Integer-valued params are sent as Cypher integers (needed for LIMIT/SKIP).
  */
 export async function cypher(
   query: string,
   params: Record<string, unknown> = {},
 ): Promise<any[]> {
-  if (!URL_BASE) throw new Error("PUPPYGRAPH_URL not configured");
-  const auth = Buffer.from(`${USER}:${PASS}`).toString("base64");
-  const res = await fetch(`${URL_BASE}/query`, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      Authorization: `Basic ${auth}`,
-    },
-    body: JSON.stringify({ query, parameters: params }),
-    // PuppyGraph is internal infra; short timeout so the API route can fall back
-    signal: AbortSignal.timeout(4000),
-  });
-  if (!res.ok) throw new Error(`PuppyGraph ${res.status}: ${await res.text()}`);
-  const data = await res.json();
-  return data.results ?? data.data ?? [];
+  const cooked: Record<string, unknown> = {};
+  for (const [k, v] of Object.entries(params)) {
+    cooked[k] = typeof v === "number" && Number.isInteger(v) ? neo4j.int(v) : v;
+  }
+  const session = getDriver().session({ defaultAccessMode: neo4j.session.READ });
+  try {
+    const res = await session.run(query, cooked);
+    return res.records.map((r) => toPlain(r.toObject()) as Record<string, unknown>);
+  } finally {
+    await session.close();
+  }
 }

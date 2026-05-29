@@ -3,10 +3,12 @@
 # (run separately with `npm run dev`) proxies queries to PuppyGraph and falls
 # back to in-process algorithms if this stack is down.
 #
-#   1. npm run ingest            # or: npx tsx scripts/gen-sample.ts
-#   2. npx tsx scripts/export-sql.ts   # writes data/seed.sql
+#   1. npm run ingest            # or: npm run sample
+#   2. npm run export-sql        # writes data/seed.sql (Postgres loads it on first boot)
 #   3. docker compose up -d
-#   4. open http://localhost:8081  (PuppyGraph UI) — upload puppygraph/schema.json
+#   4. curl -XPOST -H "content-type: application/json" --data @puppygraph/schema.json \
+#        --user "puppygraph:puppygraph123" http://localhost:8081/schema
+#   5. app reads PUPPYGRAPH_BOLT=bolt://localhost:7687 (see .env.example)
 #
 services:
   postgres:
@@ -35,8 +37,9 @@ services:
       PUPPYGRAPH_USERNAME: puppygraph
       PUPPYGRAPH_PASSWORD: puppygraph123
     ports:
-      - "8081:8081" # web UI + query endpoint
-      - "8182:8182" # gremlin
+      - "8081:8081" # web UI + schema management API
+      - "8182:8182" # gremlin server
+      - "7687:7687" # bolt — openCypher (used by the app)
     volumes:
       - ./puppygraph/schema.json:/etc/puppygraph/schema.json:ro
 
