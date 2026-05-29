@@ -1,0 +1,1147 @@
+{
+  "generatedAt": "2026-05-29T04:24:55.461Z",
+  "repos": [
+    {
+      "id": "1251779986",
+      "name": "RAG-Pipeline",
+      "description": "Production grade Retrieval-Augmented Generation system",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "url": "https://github.com/ujjwalredd/RAG-Pipeline",
+      "avatar": "https://avatars.githubusercontent.com/u/66116582?v=4",
+      "readmeExcerpt": "# RAG Pipeline with Hybrid Search Over Internal Docs A production-grade Retrieval-Augmented Generation system that ingests enterprise documentation, indexes it with both dense vector and sparse keyword search, retrieves the most relevant context for any question, and generates grounded answers with inline source citations — all powered by local LLMs via Ollama. No API keys. No cloud dependencies. Fully offline-capable. Built on the [EnterpriseRAG-Bench](https://huggingface.co/datasets/onyx-dot-app/EnterpriseRAG-Bench) dataset — 500K+ enterprise documents spanning Confluence, GitHub, Slack, Gma",
+      "clusterId": 1,
+      "pos": [
+        -2.5,
+        0,
+        -6
+      ],
+      "height": 9,
+      "footprint": 3.8
+    },
+    {
+      "id": "1162185883",
+      "name": "ujjwalredd",
+      "description": "",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "url": "https://github.com/ujjwalredd/ujjwalredd",
+      "avatar": "https://avatars.githubusercontent.com/u/66116582?v=4",
+      "readmeExcerpt": "Ujjwal Reddy K S MS Data Science @ Indiana University • AI Agents • Data Engineering • Applied ML Building agentic systems, data pipelines, and applied ML products that turn messy workflows into reliable software. --- ## About Me I graduated with a degree in Data Science from Indiana University, with a focus on **AI agents, data engineering, applied machine learning, and LLM-powered systems**. My work sits at the intersection of: - **AI agent infrastructure** — MCP servers, agent marketplaces, trust layers, CLI safety wrappers, orchestration systems - **Data engineering** — ELT pipelines, orch",
+      "clusterId": 2,
+      "pos": [
+        9.5,
+        0,
+        1
+      ],
+      "height": 9.77,
+      "footprint": 3.8
+    },
+    {
+      "id": "1241207886",
+      "name": "meerkat",
+      "description": "Meerkat is a local CLI security wrapper.",
+      "language": "Go",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "url": "https://github.com/ujjwalredd/meerkat",
+      "avatar": "https://avatars.githubusercontent.com/u/66116582?v=4",
+      "readmeExcerpt": "Meerkat Vibe coding without blind trust. Local CLI security wrapper for AI coding agents and long-running developer workflows. Keeps your machine awake while agents work. Auto-approves actions that are safe, scoped, and policy-compliant. Blocks risky behavior. Logs every decision. Agent-agnostic. Wrap `claude`, `codex`, `aider`, `goose`, `npm test`, `pytest`, or any command-line tool. > Not a sandbox. A secure-by-default local **policy runner**. Hardens with > OS-level backends (Seatbelt, bubblewrap, WSL2) when opted in. For > high-risk agent workloads also run inside a container or VM. --- ##",
+      "clusterId": 3,
+      "pos": [
+        -9.5,
+        0,
+        13
+      ],
+      "height": 10.54,
+      "footprint": 3.8
+    },
+    {
+      "id": "1247166006",
+      "name": "omnicore",
+      "description": "The Zero-Trust Private Agentic Gateway & Automated Data Flywheel",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "url": "https://github.com/ujjwalredd/omnicore",
+      "avatar": "https://avatars.githubusercontent.com/u/66116582?v=4",
+      "readmeExcerpt": "# OmniCore-Local: The Zero-Trust Private Agentic Gateway & Automated Data Flywheel > A fully on-premise agentic system that fuses **Anthropic's MCP**, **OpenAI's Swarm**, > **NVIDIA's NeMo Guardrails**, and **Google's OpenTelemetry**—then powers it with a > small open-source LLM (Llama-3-8B / Qwen-2.5-7B / Phi-3-mini) running locally > on Ollama or vLLM. No commercial APIs. No outbound calls. No data exfiltration. [![tests](https://img.shields.io/badge/tests-19%20passing-brightgreen)](tests/) [![python](https://img.shields.io/badge/python-3.11%2B-blue)](https://www.python.org/) [![license](htt",
+      "clusterId": 3,
+      "pos": [
+        -2.5,
+        0,
+        13
+      ],
+      "height": 11.31,
+      "footprint": 3.8
+    },
+    {
+      "id": "1148142224",
+      "name": "Axiomeer",
+      "description": "The Marketplace for AI Agents",
+      "language": "Python",
+      "stars": 26,
+      "forks": 1,
+      "topics": [],
+      "url": "https://github.com/ujjwalredd/Axiomeer",
+      "avatar": "https://avatars.githubusercontent.com/u/66116582?v=4",
+      "readmeExcerpt": "# Axiomeer **The Universal Marketplace for AI Agents** [![Python](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/) [![FastAPI](https://img.shields.io/badge/FastAPI-0.100+-green.svg)](https://fastapi.tiangolo.com/) [![PyPI](https://img.shields.io/pypi/v/axiomeer.svg)](https://pypi.org/project/axiomeer/) [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE) One API to access 91+ services. Search with natural language. Execute with 3 lines of code. ```python from axiomeer import AgentMarketplace client = AgentMarketplace(api_key=\"",
+      "clusterId": 1,
+      "pos": [
+        9.5,
+        0,
+        -6
+      ],
+      "height": 39,
+      "footprint": 6.2
+    },
+    {
+      "id": "1232325014",
+      "name": "deepnote-mcp",
+      "description": "prototype of the **Deepnote-as-a-data-agent**",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "url": "https://github.com/ujjwalredd/deepnote-mcp",
+      "avatar": "https://avatars.githubusercontent.com/u/66116582?v=4",
+      "readmeExcerpt": "# Deepnote MCP — Project Report A working prototype of the **Deepnote-as-a-data-agent** vision: an MCP server that lets any MCP-compatible client (Claude Desktop, Cursor, Windsurf, etc.) drive a Deepnote-style notebook session — running SQL, executing Python, ingesting CSVs, rendering charts, and executing native `.deepnote` projects end-to-end, with state that persists across calls. Built on `deepnote-toolkit` (Deepnote's own execution surface) + DuckDB + Vega-Lite. ~385 LOC of server code; no cloud dependency for v0. --- ## 1. The vision (Deepnote's words) > *Using the Model Context Protocol",
+      "clusterId": 1,
+      "pos": [
+        16.5,
+        0,
+        -6
+      ],
+      "height": 12.08,
+      "footprint": 3.8
+    },
+    {
+      "id": "1226770218",
+      "name": "PromptPatch",
+      "description": "PromptPatch MCP is a local-first Model Context Protocol server.",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "url": "https://github.com/ujjwalredd/PromptPatch",
+      "avatar": "https://avatars.githubusercontent.com/u/66116582?v=4",
+      "readmeExcerpt": "# PromptPatch MCP **PromptPatch MCP: Git-style diffs, rollback, release tags, and security scans for AI prompts.** PromptPatch MCP is a local-first Model Context Protocol server that lets Claude Desktop, Cursor, Codex, or any MCP client checkpoint prompts during a conversation. It stores prompt history in SQLite, exposes MCP tools for version control, and scans prompt content for common injection, exfiltration, secret-leakage, and dangerous-action patterns before storage. No SaaS. No telemetry. No cloud dependency. One local database file. ## Why This Exists Prompt engineering is becoming soft",
+      "clusterId": 2,
+      "pos": [
+        16.5,
+        0,
+        1
+      ],
+      "height": 12.85,
+      "footprint": 3.8
+    },
+    {
+      "id": "1224993791",
+      "name": "Avantos",
+      "description": "Journey Builder — Avantos Coding Challenge",
+      "language": "TypeScript",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "url": "https://github.com/ujjwalredd/Avantos",
+      "avatar": "https://avatars.githubusercontent.com/u/66116582?v=4",
+      "readmeExcerpt": "# Journey Builder — Avantos Coding Challenge A small React + TypeScript app that loads an action blueprint DAG, lists its forms, and lets the user view, edit, and clear prefill mappings for each form field. Designed so new prefill data sources can be added without touching the UI. ## Run it locally ```bash # 1. Start the mock blueprint server (in a sibling directory) git clone https://github.com/mosaic-avantos/frontendchallengeserver cd frontendchallengeserver && npm install && npm start # → listens on http://localhost:3000 # 2. In another terminal, start this app git clone https://github.com/",
+      "clusterId": 3,
+      "pos": [
+        9.5,
+        0,
+        13
+      ],
+      "height": 13.62,
+      "footprint": 3.8
+    },
+    {
+      "id": "1191115678",
+      "name": "Route-Explanation-System",
+      "description": "This is a Knowledge-Based AI project.",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "url": "https://github.com/ujjwalredd/Route-Explanation-System",
+      "avatar": "https://avatars.githubusercontent.com/u/66116582?v=4",
+      "readmeExcerpt": "# Route Explanation System **CSCI-B 551 — Elements of Artificial Intelligence** Indiana University, Fall 2026 **Team:** Ujjwal Reddy Kalvolu Sreenivasa Reddy, Rithvik Mysore Suresh, Divya Prasanth Paraman --- ## What this is Most navigation apps tell you a route and a time. They don't tell you *why*. This system does. Given a start and end point in Bloomington, Indiana, it generates three candidate routes — optimized for speed, ease of driving, or a balanced trade-off — and produces a structured natural-language explanation for why a particular route was chosen. The explanation is grounded in ",
+      "clusterId": 1,
+      "pos": [
+        23.5,
+        0,
+        -6
+      ],
+      "height": 14.38,
+      "footprint": 3.8
+    },
+    {
+      "id": "1216374853",
+      "name": "Preflight",
+      "description": "A single canonical manifest.",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "url": "https://github.com/ujjwalredd/Preflight",
+      "avatar": "https://avatars.githubusercontent.com/u/66116582?v=4",
+      "readmeExcerpt": "# Preflight Preflight scans a software project and produces a **single canonical manifest** for AI coding assistants. It turns scattered repo signals into one structured document: inferred commands with confidence, risk, and evidence; extracted AI instruction files; entrypoints; project graphs; framework analysis; CI hints; container metadata; and **consistency warnings** when those signals disagree. ## Why this exists Assistants burn tokens reconciling `README.md`, `package.json`, `Makefile`, `pyproject.toml`, CI YAML, workspace layouts, ad-hoc team docs, and service wiring. Preflight merges ",
+      "clusterId": 3,
+      "pos": [
+        16.5,
+        0,
+        13
+      ],
+      "height": 15.15,
+      "footprint": 3.8
+    },
+    {
+      "id": "1181947496",
+      "name": "Verix",
+      "description": "Trust Infrastructure for AI Agents",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "url": "https://github.com/ujjwalredd/Verix",
+      "avatar": "https://avatars.githubusercontent.com/u/66116582?v=4",
+      "readmeExcerpt": "# Verix — Trust Infrastructure for AI Agents > Open-source cryptographic trust infrastructure for AI agents communicating across organizational boundaries. When your AI agent talks to another company's AI agent — how do you know it's actually talking to the right agent? How do you know the interaction was authorized by both sides? How do you prove it happened? Verix answers all three questions without either company sharing private data, and without trusting a central authority. --- ## The Problem AI agents are being deployed across company boundaries today. A procurement agent at Company X se",
+      "clusterId": 2,
+      "pos": [
+        23.5,
+        0,
+        1
+      ],
+      "height": 15.92,
+      "footprint": 3.8
+    },
+    {
+      "id": "1169342280",
+      "name": "Supply-Chain",
+      "description": "Disruptions resolved before you wake up.",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "url": "https://github.com/ujjwalredd/Supply-Chain",
+      "avatar": "https://avatars.githubusercontent.com/u/66116582?v=4",
+      "readmeExcerpt": "# ForeverAutonomous [![CI](https://github.com/ujjwalredd/Supply-Chain/actions/workflows/ci.yml/badge.svg)](https://github.com/ujjwalredd/Supply-Chain/actions/workflows/ci.yml) [![Live Demo](https://img.shields.io/badge/demo-live-brightgreen)](https://supply-chain-silk.vercel.app) [![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](LICENSE) [![Tests](https://img.shields.io/badge/tests-203%20passed-brightgreen)](#validation-playbook) [![Agents](https://img.shields.io/badge/agents-13%20HEALTHY-brightgreen)](#autonomous-agent-system) [Live Demo](https://supply-chain-silk.v",
+      "clusterId": 3,
+      "pos": [
+        23.5,
+        0,
+        13
+      ],
+      "height": 16.69,
+      "footprint": 3.8
+    },
+    {
+      "id": "1164229982",
+      "name": "GHI-Assignment",
+      "description": "",
+      "language": "Jupyter Notebook",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "url": "https://github.com/ujjwalredd/GHI-Assignment",
+      "avatar": "https://avatars.githubusercontent.com/u/66116582?v=4",
+      "readmeExcerpt": "# HIV 2015 Impact Score – GHI Data Team Assignment This repository contains the implementation of the Impact Score calculation for the HIV 2015 ORS (Outcome Reporting Sheet) dataset, as part of the Global Health Impact (GHI) Project Data Team selection process. ## Task Summary Calculate the Impact Score for each country in the HIV 2015 ORS with respect to all drugs in the dataset, using the entity mapping and formula from the HIV 2013 reference and Entity_Map (ReadME).md. ## Files - **`hiv_2015_impact_score.py`** – Python script that computes impact scores - **`impact_score.csv`** – Output: co",
+      "clusterId": 0,
+      "pos": [
+        -23.5,
+        0,
+        -20
+      ],
+      "height": 17.46,
+      "footprint": 3.8
+    },
+    {
+      "id": "1162616361",
+      "name": "Autonomous-AI-Company-Operating-System",
+      "description": "Autonomous AI Company OS is an enterprise grade multi-agent system",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "url": "https://github.com/ujjwalredd/Autonomous-AI-Company-Operating-System",
+      "avatar": "https://avatars.githubusercontent.com/u/66116582?v=4",
+      "readmeExcerpt": "# Autonomous AI Company Operating System A production-grade, self-running organization of AI agents that autonomously builds, deploys, markets, and grows software products with zero human intervention after initial setup. The system operates as a complete virtual company with strategic leadership, engineering teams, growth functions, and infrastructure agents, all coordinated through an event-driven message bus architecture. ## Table of Contents 1. [Overview](#overview) 2. [System Architecture](#system-architecture) 3. [Agent Types and Roles](#agent-types-and-roles) 4. [Workflow and Message Fl",
+      "clusterId": 2,
+      "pos": [
+        -23.5,
+        0,
+        13
+      ],
+      "height": 18.23,
+      "footprint": 3.8
+    },
+    {
+      "id": "1162827968",
+      "name": "autonomous-ai-product",
+      "description": "Product built by Autonomous AI Company",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "url": "https://github.com/ujjwalredd/autonomous-ai-product",
+      "avatar": "https://avatars.githubusercontent.com/u/66116582?v=4",
+      "readmeExcerpt": "# Autonomous AI Product Built by Autonomous AI Company. All code is generated and maintained autonomously.",
+      "clusterId": 2,
+      "pos": [
+        -16.5,
+        0,
+        13
+      ],
+      "height": 19,
+      "footprint": 3.8
+    },
+    {
+      "id": "1158845725",
+      "name": "Structured-Knowledge-Notation",
+      "description": "",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "url": "https://github.com/ujjwalredd/Structured-Knowledge-Notation",
+      "avatar": "https://avatars.githubusercontent.com/u/66116582?v=4",
+      "readmeExcerpt": "# SKN vs JSON Extraction Benchmark [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) ## Thesis Current AI pipelines extract information from web search results into **JSON** before passing it to a reasoning LLM. JSON carries raw facts but zero epistemic metadata: no per-claim confidence, no causal structure, no knowledge gaps, no risk signals. The reasoning model is left to guess what is reliable and what is missing. **Structured Knowledge Notation (SKN)** is a drop-in replacement for JSON at the extraction layer. It encodes confidence, causality, gaps, and risk i",
+      "clusterId": 0,
+      "pos": [
+        -16.5,
+        0,
+        -20
+      ],
+      "height": 19.77,
+      "footprint": 3.8
+    },
+    {
+      "id": "1147324717",
+      "name": "TextbookAPI",
+      "description": "",
+      "language": "Python",
+      "stars": 5,
+      "forks": 0,
+      "topics": [],
+      "url": "https://github.com/ujjwalredd/TextbookAPI",
+      "avatar": "https://avatars.githubusercontent.com/u/66116582?v=4",
+      "readmeExcerpt": "# TextbookAPI A retrieval-augmented generation (RAG) system that serves PDF textbooks as conversational Q&A APIs. It extracts content from PDF files, builds vector indexes for semantic search, and answers questions using a local LLM through Ollama. The system exposes a FastAPI server with streaming support and ships a Python SDK client for integration into any application. ## Table of Contents 1. [Architecture](#architecture) 2. [Prerequisites](#prerequisites) 3. [Installation](#installation) 4. [Quick Start](#quick-start) 5. [Project Structure](#project-structure) 6. [Configuration](#configur",
+      "clusterId": 3,
+      "pos": [
+        -23.5,
+        0,
+        20
+      ],
+      "height": 38.23,
+      "footprint": 3.8
+    },
+    {
+      "id": "1145539362",
+      "name": "ELT-Pipeline-Airflow",
+      "description": "",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "url": "https://github.com/ujjwalredd/ELT-Pipeline-Airflow",
+      "avatar": "https://avatars.githubusercontent.com/u/66116582?v=4",
+      "readmeExcerpt": "# ELT Pipeline with Airflow, dbt, and PostgreSQL A fully containerized Extract-Load-Transform (ELT) data pipeline that moves data from a source PostgreSQL database to a destination database using Apache Airflow for orchestration and dbt for data transformations. ## Architecture ``` Source PostgreSQL (main_db) | | pg_dump + psql (ELT Script) v Destination PostgreSQL (des_db) | | dbt run --full-refresh v Transformed Tables (films, actors, film_actors, film_ratings, specific_movie) ``` ### How It Works 1. **Extract & Load**: A Python script uses `pg_dump` to export the entire source database and ",
+      "clusterId": 3,
+      "pos": [
+        -16.5,
+        0,
+        20
+      ],
+      "height": 20.54,
+      "footprint": 3.8
+    },
+    {
+      "id": "1113774500",
+      "name": "LodeAI",
+      "description": "",
+      "language": "TypeScript",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "url": "https://github.com/ujjwalredd/LodeAI",
+      "avatar": "https://avatars.githubusercontent.com/u/66116582?v=4",
+      "readmeExcerpt": "# LodeAI - AI-Powered Technical Recruitment Platform An enterprise-grade AI-powered technical assessment platform that revolutionizes the hiring process by generating personalized coding assessments using advanced AI and providing candidates with fully configured, AI-guided development environments. ## Overview LodeAI is a comprehensive technical recruitment platform that combines cutting-edge AI technology with modern development tools to streamline the hiring process. The platform enables recruiters to create personalized coding assessments automatically generated from job descriptions, whil",
+      "clusterId": 0,
+      "pos": [
+        -9.5,
+        0,
+        -20
+      ],
+      "height": 21.31,
+      "footprint": 3.8
+    },
+    {
+      "id": "1030383349",
+      "name": "LLM-LLAMA-Project",
+      "description": "",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "url": "https://github.com/ujjwalredd/LLM-LLAMA-Project",
+      "avatar": "https://avatars.githubusercontent.com/u/66116582?v=4",
+      "readmeExcerpt": "# YouTube Content Analyzer A powerful web application that extracts content from YouTube videos and provides AI-powered analysis, insights, and suggestions for content creators. ## Features - **Content Extraction**: Automatically extracts subtitles or transcribes audio from YouTube videos - **AI Analysis**: Get insights about video content, topics, and themes - **Content Strategy**: Receive suggestions for better titles, thumbnails, and content strategy - **Real-time Responses**: Stream AI responses in real-time for better user experience - **Clean Interface**: Simple, user-friendly web interf",
+      "clusterId": 0,
+      "pos": [
+        -2.5,
+        0,
+        -20
+      ],
+      "height": 22.08,
+      "footprint": 3.8
+    },
+    {
+      "id": "965208807",
+      "name": "Interactive-ML-Pipeline",
+      "description": "",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "url": "https://github.com/ujjwalredd/Interactive-ML-Pipeline",
+      "avatar": "https://avatars.githubusercontent.com/u/66116582?v=4",
+      "readmeExcerpt": "# ML Model Development Platform An interactive machine learning model development platform for training, evaluating, and comparing machine learning models. This platform is designed to help data scientists and machine learning enthusiasts streamline their workflow from data preprocessing to model evaluation. ## Features - **Data Analysis Dashboard**: Upload and analyze datasets with interactive visualizations - **Exploratory Data Analysis (EDA)**: Automatically generate insightful visualizations of your data - **Feature Engineering**: Create new features, transform existing ones, and select th",
+      "clusterId": 0,
+      "pos": [
+        9.5,
+        0,
+        -20
+      ],
+      "height": 22.85,
+      "footprint": 3.8
+    },
+    {
+      "id": "1031910062",
+      "name": "Movie-Recommendation-Engine",
+      "description": "A state-of-the-art movie recommendation system built with Python, PyTorch, and advanced machine learning techniques. This comprehensive system combines collaborative filtering, matrix factorization, and neural collaborative filtering to deliver personalized movie recommendations with sub-200ms latency.",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "url": "https://github.com/ujjwalredd/Movie-Recommendation-Engine",
+      "avatar": "https://avatars.githubusercontent.com/u/66116582?v=4",
+      "readmeExcerpt": "# 🎬 Movie Recommendation Engine A state-of-the-art movie recommendation system built with Python, PyTorch, and advanced machine learning techniques. This comprehensive system combines collaborative filtering, matrix factorization, and neural collaborative filtering to deliver personalized movie recommendations with sub-200ms latency. ## 🚀 Key Features ### 🤖 **Advanced Algorithms** - **Matrix Factorization**: SVD and NMF implementations with regularization - **Neural Collaborative Filtering**: Deep learning approach using PyTorch - **Hybrid Recommendations**: Intelligent combination of multi",
+      "clusterId": 1,
+      "pos": [
+        -23.5,
+        0,
+        1
+      ],
+      "height": 23.62,
+      "footprint": 3.8
+    },
+    {
+      "id": "1031852199",
+      "name": "Algorithmic-Trading-System-with-AI-Analysis",
+      "description": "A comprehensive algorithmic trading system featuring multiple trading strategies, backtesting capabilities, risk management, and **AI-powered analysis using Ollama**.",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "url": "https://github.com/ujjwalredd/Algorithmic-Trading-System-with-AI-Analysis",
+      "avatar": "https://avatars.githubusercontent.com/u/66116582?v=4",
+      "readmeExcerpt": "# Algorithmic Trading System with AI Analysis A comprehensive algorithmic trading system featuring multiple trading strategies, backtesting capabilities, risk management, and **AI-powered analysis using Ollama**. [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/downloads/) [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE) [![Status](https://img.shields.io/badge/Status-Active-brightgreen.svg)]() ## ✨ Features ### 📈 Trading Strategies - **Mean Reversion**: Z-score based entry/exit signals - **Momentum**: Volatility-adjusted price mome",
+      "clusterId": 0,
+      "pos": [
+        16.5,
+        0,
+        -20
+      ],
+      "height": 24.38,
+      "footprint": 3.8
+    },
+    {
+      "id": "1134586998",
+      "name": "ATS-Resume-Optimizer",
+      "description": "",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "url": "https://github.com/ujjwalredd/ATS-Resume-Optimizer",
+      "avatar": "https://avatars.githubusercontent.com/u/66116582?v=4",
+      "readmeExcerpt": "# ATS Resume Optimizer AI-powered tool that automatically optimizes LaTeX resumes based on job descriptions. Analyzes your profile from GitHub, LinkedIn, and Google Scholar, then intelligently rewrites resume bullets to match job requirements while maintaining factual accuracy. ![Dashboard](dashboard.png) ## Features - URL Extraction: Extract job descriptions directly from LinkedIn, Indeed, Glassdoor URLs - Profile-First Analysis: Analyzes your capabilities before optimizing - Smart Matching: Matches profile with job requirements, identifies strengths and gaps - Evidence-Based: Only uses your ",
+      "clusterId": 3,
+      "pos": [
+        -9.5,
+        0,
+        20
+      ],
+      "height": 25.15,
+      "footprint": 3.8
+    },
+    {
+      "id": "1049860829",
+      "name": "AI-Data-Scraper",
+      "description": "A minimalistic web application designed to responsibly gather and preprocess textual content from websites for AI training. This tool offers flexible extraction modes, allowing users to scrape raw text or extract structured JSON data based on a custom prompt.",
+      "language": "TypeScript",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "url": "https://github.com/ujjwalredd/AI-Data-Scraper",
+      "avatar": "https://avatars.githubusercontent.com/u/66116582?v=4",
+      "readmeExcerpt": "# AI Data Scraper A minimalistic web application designed to responsibly gather and preprocess textual content from websites for AI training. This tool offers flexible extraction modes, allowing users to scrape raw text or extract structured JSON data based on a custom prompt. ## ✨ Features - **Dual Extraction Modes**: - **Text Mode**: Scrapes and cleans the main textual content from websites. - **JSON Mode**: Extracts structured data (e.g., product details, article metadata) based on a user-provided prompt. - **Batch Processing**: Process multiple URLs by pasting them in or uploading a `.txt`",
+      "clusterId": 0,
+      "pos": [
+        23.5,
+        0,
+        -20
+      ],
+      "height": 25.92,
+      "footprint": 3.8
+    },
+    {
+      "id": "1145615231",
+      "name": "PermitDecoder",
+      "description": "",
+      "language": "TypeScript",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "url": "https://github.com/ujjwalredd/PermitDecoder",
+      "avatar": "https://avatars.githubusercontent.com/u/66116582?v=4",
+      "readmeExcerpt": "# PermitDecoder PermitDecoder is an AI-powered web application that provides comprehensive building permit requirement analysis for US jurisdictions. The application leverages Google's Gemini AI with real-time search grounding to synthesize complex municipal codes, zoning ordinances, and permit regulations into actionable project reports. ## Overview PermitDecoder transforms complex government permit requirements into structured, professional reports. Users can query specific permit scenarios by location and project type, receiving detailed analyses that include required permits, compliance pr",
+      "clusterId": 0,
+      "pos": [
+        -23.5,
+        0,
+        -13
+      ],
+      "height": 26.69,
+      "footprint": 3.8
+    },
+    {
+      "id": "1144771711",
+      "name": "LLM-Fine-Tuning",
+      "description": "",
+      "language": "Jupyter Notebook",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "url": "https://github.com/ujjwalredd/LLM-Fine-Tuning",
+      "avatar": "https://avatars.githubusercontent.com/u/66116582?v=4",
+      "readmeExcerpt": "# WhatsApp Chat Style Fine Tuning ## Why I Built This Look I'll be honest with you. One day I was scrolling through my WhatsApp chats with my friend and I thought what if I could train an AI to sound exactly like me when texting. Not because I'm lazy or anything but purely for the science of it. Also it's pretty cool to see if machine learning can actually capture someone's texting personality. I had thousands of messages just sitting there. Years of conversations with all my weird texting habits like saying ha all the time or using guru randomly or just being super casual with grammar. That's",
+      "clusterId": 0,
+      "pos": [
+        -16.5,
+        0,
+        -13
+      ],
+      "height": 27.46,
+      "footprint": 3.8
+    },
+    {
+      "id": "1125028880",
+      "name": "Blackjack-Analytics-Pipeline",
+      "description": "",
+      "language": "Jupyter Notebook",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "url": "https://github.com/ujjwalredd/Blackjack-Analytics-Pipeline",
+      "avatar": "https://avatars.githubusercontent.com/u/66116582?v=4",
+      "readmeExcerpt": "# Blackjack Analytics Pipeline (AWS + PySpark) End-to-end **cloud-based big data analytics pipeline** using **AWS (S3, EC2, IAM, SageMaker)** and **PySpark** to ingest, process, analyze, and store blackjack game data for downstream analytics, machine learning, and dashboards. ## Project Overview This project builds a production-style data pipeline: - Ingest raw blackjack hands data from **Amazon S3** - Process and feature-engineer using **PySpark** on **EC2** - Write processed outputs back to **S3** in **CSV** format - Run analytics using **Spark SQL** for game insights - Train machine learnin",
+      "clusterId": 0,
+      "pos": [
+        -9.5,
+        0,
+        -13
+      ],
+      "height": 28.23,
+      "footprint": 3.8
+    },
+    {
+      "id": "1069777780",
+      "name": "idea-tinder",
+      "description": "",
+      "language": "JavaScript",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "url": "https://github.com/ujjwalredd/idea-tinder",
+      "avatar": "https://avatars.githubusercontent.com/u/66116582?v=4",
+      "readmeExcerpt": "# 💡 Idea Tinder - AI Startup Generator A modern, sleek startup idea generator powered by Claude AI. Swipe through unique startup ideas and get detailed pitch decks for the ones you like! ## 🌐 Live Demo **Try it now:** [https://idea-tinder.vercel.app](https://idea-tinder.vercel.app) ## 🚀 Features - **Professional AI Generation**: High-quality, fundable startup ideas using Claude 3.5 Haiku - **Enterprise Focus**: B2B and enterprise software ideas with realistic market sizing - **No Predefined Templates**: Every idea is unique and dynamically created - **Swipe Interface**: Tinder-like interfac",
+      "clusterId": 3,
+      "pos": [
+        -2.5,
+        0,
+        20
+      ],
+      "height": 29,
+      "footprint": 3.8
+    },
+    {
+      "id": "1068169252",
+      "name": "neo4jstackflow",
+      "description": "",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "url": "https://github.com/ujjwalredd/neo4jstackflow",
+      "avatar": "https://avatars.githubusercontent.com/u/66116582?v=4",
+      "readmeExcerpt": "# 🧠 Neo4j AI Agent with Enhanced Session Management & Advanced Error Handling >>>>>> fixed bugs and improved ## ✨ Features ### 🎯 Core Functionality - **Natural Language Processing**: Ask questions about your Neo4j database in plain English - **Intelligent Cypher Generation**: AI-powered conversion of questions to Cypher queries using Claude 3 Haiku - **Advanced Error Handling**: No-fallback intelligent error analysis with session context learning - **Enterprise Session Management**: Complete conversation tracking with persistent storage - **Professional GraphViz Visualizations**: High-qualit",
+      "clusterId": 1,
+      "pos": [
+        -16.5,
+        0,
+        1
+      ],
+      "height": 29.77,
+      "footprint": 3.8
+    },
+    {
+      "id": "1043968188",
+      "name": "Music-Genre-Classification",
+      "description": "",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "url": "https://github.com/ujjwalredd/Music-Genre-Classification",
+      "avatar": "https://avatars.githubusercontent.com/u/66116582?v=4",
+      "readmeExcerpt": "# 🎵 Music Genre Classification & Audio Analysis System [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/downloads/) [![TensorFlow](https://img.shields.io/badge/TensorFlow-2.16+-orange.svg)](https://tensorflow.org/) [![Streamlit](https://img.shields.io/badge/Streamlit-1.28+-red.svg)](https://streamlit.io/) [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE) > **End-to-end generative AI system** combining audio feature extraction with transformer-based text analysis of song lyrics, achieving **88% accuracy** in multi-label genre classif",
+      "clusterId": 0,
+      "pos": [
+        -2.5,
+        0,
+        -13
+      ],
+      "height": 30.54,
+      "footprint": 3.8
+    },
+    {
+      "id": "1033174328",
+      "name": "Crypto-News-Scraper",
+      "description": "",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "url": "https://github.com/ujjwalredd/Crypto-News-Scraper",
+      "avatar": "https://avatars.githubusercontent.com/u/66116582?v=4",
+      "readmeExcerpt": "# Crypto News Scraper A comprehensive web scraping project built with Scrapy that automatically collects cryptocurrency news articles from multiple sources and stores them in a PostgreSQL database. ## 📋 Table of Contents - [Overview](#overview) - [Features](#features) - [Project Structure](#project-structure) - [Installation](#installation) - [Configuration](#configuration) - [Usage](#usage) - [Data Sources](#data-sources) - [Database Schema](#database-schema) - [Output Files](#output-files) - [Technical Details](#technical-details) ## 🎯 Overview This project is a Scrapy-based web scraper de",
+      "clusterId": 0,
+      "pos": [
+        9.5,
+        0,
+        -13
+      ],
+      "height": 31.31,
+      "footprint": 3.8
+    },
+    {
+      "id": "960752327",
+      "name": "Timer",
+      "description": "Countdown Timer interface done using cursor (Vibe Coding)",
+      "language": "CSS",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "url": "https://github.com/ujjwalredd/Timer",
+      "avatar": "https://avatars.githubusercontent.com/u/66116582?v=4",
+      "readmeExcerpt": "# Timer Countdown Timer interface done using cursor (Vibe Coding) A sleek, modern, and feature-rich countdown timer web application. Perfect for workouts, cooking, presentations, and any time-based activities. [![Timer Preview](timer-preview.jpg)](timer-preview.jpg) ## Features - 🕒 Customizable timer with hours, minutes, and seconds - 🌓 Dark/Light mode with system theme detection - 🎉 Celebration effects when timer completes - 🎮 Keyboard shortcuts for quick control - 📱 Responsive design for all devices - 🖥️ Fullscreen mode support - 🎵 Sound notification on completion - 🔔 Browser notific",
+      "clusterId": 0,
+      "pos": [
+        16.5,
+        0,
+        -13
+      ],
+      "height": 32.08,
+      "footprint": 3.8
+    },
+    {
+      "id": "916680534",
+      "name": "Mane",
+      "description": "Startup Real-Estate Busniess ",
+      "language": "HTML",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "url": "https://github.com/ujjwalredd/Mane",
+      "avatar": "https://avatars.githubusercontent.com/u/66116582?v=4",
+      "readmeExcerpt": "",
+      "clusterId": 3,
+      "pos": [
+        9.5,
+        0,
+        20
+      ],
+      "height": 32.85,
+      "footprint": 3.8
+    },
+    {
+      "id": "942047875",
+      "name": "Computer-Vision",
+      "description": "Computer Vision Project ",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "url": "https://github.com/ujjwalredd/Computer-Vision",
+      "avatar": "https://avatars.githubusercontent.com/u/66116582?v=4",
+      "readmeExcerpt": "## Identify the pitch ### Notes - 2/6 - Ideas Here we have to find all round shapes in the image. Each of the filled in notes have the same thickness/diameter/circumference, which is different from the signs for clefs, brace and rests. We need to draw a bounding box surrounding each note. Then finally identify the pitch based on the line on which they are placed. The problem with pitch is that it varies with clef. So an 'E' in treble clef is a 'G' in base clef. ### Notes - 2/8 (ukalvolu) Worked on part 2 -> Created script that processes an input image to detect and highlight dark regions, and ",
+      "clusterId": 0,
+      "pos": [
+        23.5,
+        0,
+        -13
+      ],
+      "height": 33.62,
+      "footprint": 3.8
+    },
+    {
+      "id": "682941744",
+      "name": "sentimental-analysis-on-imdb-reviews",
+      "description": "",
+      "language": "Jupyter Notebook",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "url": "https://github.com/ujjwalredd/sentimental-analysis-on-imdb-reviews",
+      "avatar": "https://avatars.githubusercontent.com/u/66116582?v=4",
+      "readmeExcerpt": "# Sentimental Analysis on IMDB Reviews ## Overview This project performs sentiment analysis on IMDb movie reviews. It aims to classify reviews as either positive or negative to determine the sentiment associated with each review. The sentiment analysis is performed using machine learning techniques. ## Getting Started These instructions will help you set up and run the project on your local machine for development and testing purposes. 1. Clone the repository: `https://github.com/ujjwalredd/sentimental-analysis-on-imdb-reviews.git` 2. Use the `.ipynb` file. ## Data The dataset used for this pr",
+      "clusterId": 0,
+      "pos": [
+        -23.5,
+        0,
+        -6
+      ],
+      "height": 34.38,
+      "footprint": 3.8
+    },
+    {
+      "id": "650629840",
+      "name": "Tic-Tac-Toe-with-AI",
+      "description": "Package: https://pypi.org/project/TicTacToeAI/",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "url": "https://github.com/ujjwalredd/Tic-Tac-Toe-with-AI",
+      "avatar": "https://avatars.githubusercontent.com/u/66116582?v=4",
+      "readmeExcerpt": "# Tic Tac Toe with AI This is a simple command-line implementation of the Tic Tac Toe game in Python, where you can play against an AI opponent. The AI opponent uses the minimax algorithm to make its moves, providing a challenging gameplay experience. ## Prerequisites To run this game, make sure you have Python 3 installed on your system. You can download Python from the official website: [Python.org](https://www.python.org/) ## How to Play * Clone this repository to your local machine or download the source code as a ZIP file. * Open a terminal or command prompt and navigate to the project di",
+      "clusterId": 0,
+      "pos": [
+        -16.5,
+        0,
+        -6
+      ],
+      "height": 35.15,
+      "footprint": 3.8
+    },
+    {
+      "id": "649682173",
+      "name": "Automated-Machine-Learning-Framework-for-Data-Analysis",
+      "description": "Package : https://pypi.org/project/UAutoml/",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "url": "https://github.com/ujjwalredd/Automated-Machine-Learning-Framework-for-Data-Analysis",
+      "avatar": "https://avatars.githubusercontent.com/u/66116582?v=4",
+      "readmeExcerpt": "# Automated Machine Learning Framework for Data Analysis. A machine learning framework for automated data analysis tasks is provided by this code. For feature selection, model training, and model assessment on datasets containing both numerical and categorical characteristics, it makes use of a variety of machine learning methods and techniques. # Features * Automated feature selection: The framework has techniques for working with datasets that have both category and numerical characteristics. To choose the most pertinent characteristics for analysis, it employs the proper feature selection a",
+      "clusterId": 1,
+      "pos": [
+        -9.5,
+        0,
+        1
+      ],
+      "height": 35.92,
+      "footprint": 3.8
+    },
+    {
+      "id": "375581527",
+      "name": "Android-Permission-and-Activity-Dataset-Creation",
+      "description": "",
+      "language": "Python",
+      "stars": 0,
+      "forks": 1,
+      "topics": [],
+      "url": "https://github.com/ujjwalredd/Android-Permission-and-Activity-Dataset-Creation",
+      "avatar": "https://avatars.githubusercontent.com/u/66116582?v=4",
+      "readmeExcerpt": "# Android App Insight: Automated Extraction of Permissions, Activities, and Dataset Generation. This repository contains code for automatically extracting permissions and activities from Android apps, as well as creating a dataset for further analysis and research purposes. # Purpose This code's objective is to automatically extract permissions and activities from Android applications. By doing this, it hopes to make it easier to create datasets for multiple jobs, including machine learning tasks linked to Android app analysis, permission-based analysis, activity detection, and datasets for pe",
+      "clusterId": 1,
+      "pos": [
+        -2.5,
+        0,
+        1
+      ],
+      "height": 36.69,
+      "footprint": 6.2
+    },
+    {
+      "id": "650461614",
+      "name": "Covid-19-Sentimental-Analysis",
+      "description": "",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "url": "https://github.com/ujjwalredd/Covid-19-Sentimental-Analysis",
+      "avatar": "https://avatars.githubusercontent.com/u/66116582?v=4",
+      "readmeExcerpt": "# COVID-19 Sentiment Analysis using BERT, RoBERTa, Sequential, and Topic Modeling. This project uses a variety of machine learning models, such as BERT, RoBERTa, Sequential models, and Topic Modelling, to perform sentiment analysis on text data connected to COVID-19. The objective is to evaluate the effectiveness of various models and identify which one provides the highest level of sentiment categorization accuracy. ## Project Structure The project is structured as follows: * `data.py`: In this file we need to change the path of dataset file. * `bert.py`: In this file we have the bert model. ",
+      "clusterId": 0,
+      "pos": [
+        -9.5,
+        0,
+        -6
+      ],
+      "height": 37.46,
+      "footprint": 3.8
+    }
+  ],
+  "edges": [
+    {
+      "source": "1147324717",
+      "target": "1251779986",
+      "weight": 0.6093
+    },
+    {
+      "source": "1049860829",
+      "target": "1251779986",
+      "weight": 0.494
+    },
+    {
+      "source": "1232325014",
+      "target": "1251779986",
+      "weight": 0.4818
+    },
+    {
+      "source": "1162185883",
+      "target": "1162616361",
+      "weight": 0.6104
+    },
+    {
+      "source": "1162185883",
+      "target": "1169342280",
+      "weight": 0.5171
+    },
+    {
+      "source": "1162185883",
+      "target": "965208807",
+      "weight": 0.4855
+    },
+    {
+      "source": "1216374853",
+      "target": "1241207886",
+      "weight": 0.4626
+    },
+    {
+      "source": "1162616361",
+      "target": "1241207886",
+      "weight": 0.4532
+    },
+    {
+      "source": "1169342280",
+      "target": "1247166006",
+      "weight": 0.5988
+    },
+    {
+      "source": "1031852199",
+      "target": "1247166006",
+      "weight": 0.5204
+    },
+    {
+      "source": "1148142224",
+      "target": "1247166006",
+      "weight": 0.5151
+    },
+    {
+      "source": "1031852199",
+      "target": "1148142224",
+      "weight": 0.5703
+    },
+    {
+      "source": "1147324717",
+      "target": "1148142224",
+      "weight": 0.5549
+    },
+    {
+      "source": "1049860829",
+      "target": "1148142224",
+      "weight": 0.5396
+    },
+    {
+      "source": "1125028880",
+      "target": "1232325014",
+      "weight": 0.5221
+    },
+    {
+      "source": "1169342280",
+      "target": "1232325014",
+      "weight": 0.5007
+    },
+    {
+      "source": "1068169252",
+      "target": "1232325014",
+      "weight": 0.497
+    },
+    {
+      "source": "1216374853",
+      "target": "1226770218",
+      "weight": 0.5223
+    },
+    {
+      "source": "1162616361",
+      "target": "1191115678",
+      "weight": 0.4814
+    },
+    {
+      "source": "1158845725",
+      "target": "1191115678",
+      "weight": 0.4609
+    },
+    {
+      "source": "1158845725",
+      "target": "1216374853",
+      "weight": 0.5217
+    },
+    {
+      "source": "1162616361",
+      "target": "1216374853",
+      "weight": 0.4906
+    },
+    {
+      "source": "1162616361",
+      "target": "1181947496",
+      "weight": 0.5039
+    },
+    {
+      "source": "1162616361",
+      "target": "1169342280",
+      "weight": 0.5409
+    },
+    {
+      "source": "1164229982",
+      "target": "650461614",
+      "weight": 0.4529
+    },
+    {
+      "source": "1162616361",
+      "target": "1162827968",
+      "weight": 0.6162
+    },
+    {
+      "source": "1148142224",
+      "target": "1158845725",
+      "weight": 0.5235
+    },
+    {
+      "source": "1049860829",
+      "target": "1158845725",
+      "weight": 0.486
+    },
+    {
+      "source": "1049860829",
+      "target": "1147324717",
+      "weight": 0.4683
+    },
+    {
+      "source": "1125028880",
+      "target": "1145539362",
+      "weight": 0.4788
+    },
+    {
+      "source": "1113774500",
+      "target": "1134586998",
+      "weight": 0.4799
+    },
+    {
+      "source": "1049860829",
+      "target": "1113774500",
+      "weight": 0.4527
+    },
+    {
+      "source": "1030383349",
+      "target": "1043968188",
+      "weight": 0.5726
+    },
+    {
+      "source": "1030383349",
+      "target": "1049860829",
+      "weight": 0.4856
+    },
+    {
+      "source": "1030383349",
+      "target": "682941744",
+      "weight": 0.462
+    },
+    {
+      "source": "649682173",
+      "target": "965208807",
+      "weight": 0.6793
+    },
+    {
+      "source": "1232325014",
+      "target": "965208807",
+      "weight": 0.4645
+    },
+    {
+      "source": "1031910062",
+      "target": "682941744",
+      "weight": 0.4871
+    },
+    {
+      "source": "1031852199",
+      "target": "1169342280",
+      "weight": 0.5012
+    },
+    {
+      "source": "1049860829",
+      "target": "1134586998",
+      "weight": 0.5133
+    },
+    {
+      "source": "1134586998",
+      "target": "1216374853",
+      "weight": 0.4725
+    },
+    {
+      "source": "1033174328",
+      "target": "1049860829",
+      "weight": 0.555
+    },
+    {
+      "source": "1068169252",
+      "target": "1144771711",
+      "weight": 0.4826
+    },
+    {
+      "source": "1031852199",
+      "target": "1125028880",
+      "weight": 0.4946
+    },
+    {
+      "source": "1125028880",
+      "target": "1169342280",
+      "weight": 0.4832
+    },
+    {
+      "source": "1043968188",
+      "target": "682941744",
+      "weight": 0.5789
+    },
+    {
+      "source": "1043968188",
+      "target": "650461614",
+      "weight": 0.5102
+    },
+    {
+      "source": "1033174328",
+      "target": "1251779986",
+      "weight": 0.4512
+    },
+    {
+      "source": "650461614",
+      "target": "682941744",
+      "weight": 0.6346
+    },
+    {
+      "source": "1232325014",
+      "target": "650461614",
+      "weight": 0.4537
+    }
+  ],
+  "districts": [
+    {
+      "id": 0,
+      "label": "Python",
+      "color": "#38BDF8",
+      "center": [
+        -3.2058823529411766,
+        0,
+        -14.647058823529411
+      ],
+      "memberIds": [
+        "1164229982",
+        "1158845725",
+        "1113774500",
+        "1030383349",
+        "965208807",
+        "1031852199",
+        "1049860829",
+        "1145615231",
+        "1144771711",
+        "1125028880",
+        "1043968188",
+        "1033174328",
+        "960752327",
+        "942047875",
+        "682941744",
+        "650629840",
+        "650461614"
+      ]
+    },
+    {
+      "id": 1,
+      "label": "Axiomeer",
+      "color": "#818CF8",
+      "center": [
+        -0.625,
+        0,
+        -2.5
+      ],
+      "memberIds": [
+        "1251779986",
+        "1148142224",
+        "1232325014",
+        "1191115678",
+        "1031910062",
+        "1068169252",
+        "649682173",
+        "375581527"
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Ujjwalredd",
+      "color": "#22C55E",
+      "center": [
+        1.9,
+        0,
+        5.8
+      ],
+      "memberIds": [
+        "1162185883",
+        "1226770218",
+        "1181947496",
+        "1162616361",
+        "1162827968"
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Go",
+      "color": "#F472B6",
+      "center": [
+        -0.5,
+        0,
+        16.5
+      ],
+      "memberIds": [
+        "1241207886",
+        "1247166006",
+        "1224993791",
+        "1216374853",
+        "1169342280",
+        "1147324717",
+        "1145539362",
+        "1134586998",
+        "1069777780",
+        "916680534"
+      ]
+    }
+  ]
+}

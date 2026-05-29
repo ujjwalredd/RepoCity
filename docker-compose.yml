@@ -1,0 +1,44 @@
+# Local graph backend: Postgres holds the snapshot tables, PuppyGraph maps
+# them to a property graph and serves openCypher/Gremlin. The Next.js app
+# (run separately with `npm run dev`) proxies queries to PuppyGraph and falls
+# back to in-process algorithms if this stack is down.
+#
+#   1. npm run ingest            # or: npx tsx scripts/gen-sample.ts
+#   2. npx tsx scripts/export-sql.ts   # writes data/seed.sql
+#   3. docker compose up -d
+#   4. open http://localhost:8081  (PuppyGraph UI) — upload puppygraph/schema.json
+#
+services:
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: repocity
+      POSTGRES_PASSWORD: repocity
+      POSTGRES_DB: repocity
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./data/seed.sql:/docker-entrypoint-initdb.d/seed.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U repocity"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  puppygraph:
+    image: puppygraph/puppygraph:stable
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      PUPPYGRAPH_USERNAME: puppygraph
+      PUPPYGRAPH_PASSWORD: puppygraph123
+    ports:
+      - "8081:8081" # web UI + query endpoint
+      - "8182:8182" # gremlin
+    volumes:
+      - ./puppygraph/schema.json:/etc/puppygraph/schema.json:ro
+
+volumes:
+  pgdata:

@@ -1,0 +1,65 @@
+{
+  "catalogs": [
+    {
+      "name": "repocity",
+      "type": "postgresql",
+      "jdbc": {
+        "username": "repocity",
+        "password": "repocity",
+        "jdbcUri": "jdbc:postgresql://postgres:5432/repocity",
+        "driverClass": "org.postgresql.Driver"
+      }
+    }
+  ],
+  "vertices": [
+    {
+      "label": "Repo",
+      "oneToOne": {
+        "tableSource": {
+          "catalog": "repocity",
+          "schema": "public",
+          "table": "repos"
+        },
+        "id": {
+          "fields": [{ "type": "String", "field": "id", "alias": "id" }]
+        },
+        "attributes": [
+          { "type": "String", "field": "name", "alias": "name" },
+          { "type": "String", "field": "description", "alias": "description" },
+          { "type": "String", "field": "language", "alias": "language" },
+          { "type": "Int", "field": "stars", "alias": "stars" },
+          { "type": "Int", "field": "forks", "alias": "forks" },
+          { "type": "String", "field": "url", "alias": "url" },
+          { "type": "Int", "field": "cluster_id", "alias": "clusterId" }
+        ]
+      }
+    }
+  ],
+  "edges": [
+    {
+      "label": "SIMILAR_TO",
+      "fromVertex": "Repo",
+      "toVertex": "Repo",
+      "tableSource": {
+        "catalog": "repocity",
+        "schema": "public",
+        "table": "similarity_edges"
+      },
+      "id": {
+        "fields": [
+          { "type": "String", "field": "source_id", "alias": "sid" },
+          { "type": "String", "field": "target_id", "alias": "tid" }
+        ]
+      },
+      "fromId": {
+        "fields": [{ "type": "String", "field": "source_id", "alias": "source_id" }]
+      },
+      "toId": {
+        "fields": [{ "type": "String", "field": "target_id", "alias": "target_id" }]
+      },
+      "attributes": [
+        { "type": "Double", "field": "weight", "alias": "weight" }
+      ]
+    }
+  ]
+}

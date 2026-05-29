@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-sans: "Fira Sans", system-ui, sans-serif;
+  --font-mono: "Fira Code", ui-monospace, monospace;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background: #0f172a;
+  color: #f8fafc;
+  font-family: var(--font-sans);
+  overflow: hidden;
+  overscroll-behavior: none;
+}
+
+/* visible focus rings everywhere for keyboard nav */
+:focus-visible {
+  outline: none;
+}
+
+/* scrollbars on dark surfaces */
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+*::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 4px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
